@@ -14,6 +14,49 @@ This framework demonstrates advanced Selenium automation techniques with:
 
 ---
 
+## Project Structure
+
+```
+selenium-pom-framework/
+│
+├── src/
+│   ├── main/java/
+│   │   └── org/example/
+│   │       └── LogUtils.java              # Logging utility
+│   │
+│   └── test/
+│       ├── java/
+│       │   ├── base/
+│       │   │   └── BaseTest.java          # ThreadLocal WebDriver setup
+│       │   │
+│       │   ├── CustomListners/
+│       │   │   └── TestNGListeners.java   # Custom TestNG listeners
+│       │   │
+│       │   ├── Pages/
+│       │   │   ├── HomePage.java
+│       │   │   ├── LoginPage.java
+│       │   │   └── AccountCreationPage.java
+│       │   │
+│       │   └── tests/
+│       │       ├── LoginTest.java
+│       │       └── RegisterTest.java
+│       │
+│       └── resources/
+│           ├── log4j2.properties          # Log4j2 configuration
+│           └── META-INF/services/
+│               └── org.testng.ITestNGListener
+│
+├── test-outputs/
+│   └── Logs/                              # Generated log files
+│
+├── screenshots/                           # Failure screenshots
+│
+├── testng.xml                             # TestNG suite configuration
+└── pom.xml                                # Maven dependencies
+```
+
+---
+
 ## Prerequisites
 
 Add the following dependencies to your `pom.xml`:
@@ -322,49 +365,6 @@ Thread 1: RegisterTest              Thread 2: LoginTest
     threadDriver.remove()                  threadDriver.remove()
     ↓                                       ↓
 Suite End
-```
-
----
-
-## Project Structure
-
-```
-selenium-pom-framework/
-│
-├── src/
-│   ├── main/java/
-│   │   └── org/example/
-│   │       └── LogUtils.java              # Logging utility
-│   │
-│   └── test/
-│       ├── java/
-│       │   ├── base/
-│       │   │   └── BaseTest.java          # ThreadLocal WebDriver setup
-│       │   │
-│       │   ├── CustomListners/
-│       │   │   └── TestNGListeners.java   # Custom TestNG listeners
-│       │   │
-│       │   ├── Pages/
-│       │   │   ├── HomePage.java
-│       │   │   ├── LoginPage.java
-│       │   │   └── AccountCreationPage.java
-│       │   │
-│       │   └── tests/
-│       │       ├── LoginTest.java
-│       │       └── RegisterTest.java
-│       │
-│       └── resources/
-│           ├── log4j2.properties          # Log4j2 configuration
-│           └── META-INF/services/
-│               └── org.testng.ITestNGListener
-│
-├── test-outputs/
-│   └── Logs/                              # Generated log files
-│
-├── screenshots/                           # Failure screenshots
-│
-├── testng.xml                             # TestNG suite configuration
-└── pom.xml                                # Maven dependencies
 ```
 
 ---
