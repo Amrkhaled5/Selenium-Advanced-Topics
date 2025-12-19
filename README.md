@@ -2,18 +2,9 @@
 
 A comprehensive guide to advanced Selenium WebDriver concepts including TestNG Listeners, Log4j2 Logging, and Parallel Test Execution using ThreadLocal.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Prerequisites](#prerequisites)
-- [TestNG Listeners](#testng-listeners)
-- [Log4j2 Logging Configuration](#log4j2-logging-configuration)
-- [Parallel Execution with ThreadLocal](#parallel-execution-with-threadlocal)
-- [Project Structure](#project-structure)
-- [Running Tests](#running-tests)
-
 ---
 
-## Project Overview
+## Overview
 
 This framework demonstrates advanced Selenium automation techniques with:
 - **Page Object Model (POM)** design pattern
